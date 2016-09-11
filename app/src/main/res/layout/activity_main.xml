@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c3f5f4"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        tools:context="id.sch.smktelkom_mlg.tugas01.xirpl6003.pengiriman.MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/aa" />
+
+        <TextView
+            android:id="@+id/pengirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAMA PENGIRIM :" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="TUJUAN :" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="TANGGAL PENGIRIMAN :" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/kriteria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KRITERIA PENGIRIMAN" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/perusahaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="PERUSAHAAN" />
+
+            <RadioButton
+                android:id="@+id/perorangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="PERORANGAN" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/brg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KRITERIA BARANG" />
+
+        <Spinner
+            android:id="@+id/barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/barang"
+            android:spinnerMode="dialog" />
+
+        <Button
+            android:id="@+id/OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="OK" />
+
+        <TextView
+            android:id="@+id/hasil1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/hasil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/hasil3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/sr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KATEGORI PAKET" />
+
+        <CheckBox
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Yes" />
+
+        <CheckBox
+            android:id="@+id/kp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="No" />
+
+        <CheckBox
+            android:id="@+id/kb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Kilat" />
+
+    </LinearLayout>
+</ScrollView>
